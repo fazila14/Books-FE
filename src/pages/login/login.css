@@ -1,0 +1,53 @@
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+form {
+    border: 3px solid #f1f1f1
+}
+.LoginForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('C:\Users\Gayasuddin\Desktop\bookapp\booksapp\mediaAssets\pexels-min-an-694740.jpg');
+    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+input[type=text], input[type=password] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 90%;
+}
+  
+  .login-btn{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+  }
+  .cancel-btn{
+    background-color: #e03333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  

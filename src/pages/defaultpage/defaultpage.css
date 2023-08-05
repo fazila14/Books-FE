@@ -1,0 +1,22 @@
+
+.bg-img{
+    background-image: url('C:\Users\Gayasuddin\Desktop\bookapp\booksapp\mediaAssets\pexels-photo-12064.jpeg');
+    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+}
+.proceed-btn button{
+  padding: 10px;
+
+}
