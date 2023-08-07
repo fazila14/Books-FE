@@ -1,0 +1,22 @@
+
+.AllbooksPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.add-new{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+.render-books{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

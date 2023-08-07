@@ -1,0 +1,12 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(116, 224, 215);
+    margin: 20px;
+    padding: 30px;
+}
+.container-allbooks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

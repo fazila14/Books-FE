@@ -1,0 +1,23 @@
+.about-mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+    padding:20px 40px;
+    background-color: bisque;
+    box-sizing: border-box;
+}
+.Edit-buttons{
+    display: flex;
+    flex-direction: column;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.edit-book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
