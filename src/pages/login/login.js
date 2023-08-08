@@ -11,8 +11,8 @@ export default function Login() {
                 <div className="container">
                     <input type="text" placeholder="Enter Username" name="uname" required/>
                     <input type="password" placeholder="Enter Password" name="psw" required/>        
-                    <button className='login-btn' type="submit" onClick={()=>Navigate('/allbooks')}>Login</button>
-                    <button className='cancel-btn' type="button" >Cancel</button>
+                    <button className='login-btn' type="submit" onClick={()=>Navigate('/all')}>Login</button>
+                    <button className='cancel-btn' type="button" onClick={()=>Navigate('/')} >Cancel</button>
                 </div>
             </form>
         </div>

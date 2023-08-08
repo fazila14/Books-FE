@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate , useLocation,useParams} from 'react-router-dom';
+import { useNavigate , useParams} from 'react-router-dom';
 import axios from "axios";
 import Modal from "../../components/modal/modal";
+import Getallbooks from "../../components/getAllBooks/getallbooks";
 import "./getbookDetails.css"
 import BooksFormSubmit from "../../components/booksFormSubmit/booksFormSubmit";
 
 export default function GetBookDetails(){
     const [isOpen, setIsOpen] = useState(false);
     const redirectTo = useNavigate();
-    const getLocation=useLocation();
+    const handleNavigate=(link)=>{
+        redirectTo(link)
+    }
     const params=useParams();
     // const bookDetails= {
     //     id:"1",
@@ -40,46 +43,45 @@ export default function GetBookDetails(){
       }
       
     useEffect(()=>{
-        // const queryparams = new URLSearchParams(getLocation.search);
-        // const id=queryparams.get("id");
         getBookDetails(params.id);
     },[])
+
     return (
     <div className="edit-book">
         <div className="about-maincontainer">
             <div className="form-container">
                 <div>
                     <label>Id::</label>
-                    <span>{bookdata.id}</span>
+                    <span>{bookdata?.id}</span>
                 </div>
                 <div>
                     <label>Title::</label>
-                    <span>{bookdata.title}</span>
+                    <span>{bookdata?.title}</span>
                 </div>
                 <div>
                     <label>Author::</label>
-                    <span>{bookdata.author}</span>
+                    <span>{bookdata?.author}</span>
                 </div>
                 <div>
                     <label>Genre::</label>
-                    <span>{bookdata.genre}</span>
+                    <span>{bookdata?.genre}</span>
                 </div>
                 <div>
                     <label>PublicationYear::</label>
-                    <span>{bookdata.publicationYear}</span>
+                    <span>{bookdata?.publicationYear}</span>
                 </div>
                 <div>
-                    <label>PublicationYear::</label>
-                    <span>{bookdata.bookDescription}</span>
+                    <label>Short Description::</label>
+                    <span>{bookdata?.bookDescription}</span>
                 </div>
             </div>
                 <div className="Edit-buttons">
-                    <button onClick={()=> redirectTo('/allbooks')}> Back To All Books </button>
+                    <button onClick={()=> redirectTo('/all')}> Back To All Books </button>
                     <button onClick={() => setIsOpen(true)}>Edit</button>
                 </div>     
                 {isOpen && 
                     <Modal setIsOpen={setIsOpen} >
-                    <BooksFormSubmit submitTextBtn="Update" editbookData={bookdata} submitForm ={submitEditedBook} />
+                    <BooksFormSubmit submitBtnText="Update" editbookData={bookdata} submitForm ={submitEditedBook} />
                     </Modal>
                 }
 

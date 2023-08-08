@@ -30,7 +30,7 @@ export default function AllbooksPage() {
         </div> 
         <br/>
         <div className='adding-new-btn'>
-            <button className='add-new' onClick={()=>navigate('/addnew-book')}>Add Your Book</button>
+            <button className='add-new' onClick={()=>navigate('/addbook')}>Add Your Book</button>
         </div>
     </div>
   )
