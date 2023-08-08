@@ -29,7 +29,8 @@ export default function GetBookDetails(){
             setIsOpen(false);      
           } 
           catch (error) {
-              console.error(error);            
+              console.error(error); 
+              window.alert("your book details is not updated. please check");           
           }
         }    
     const getBookDetails=async(id)=>{
@@ -72,7 +73,7 @@ export default function GetBookDetails(){
                 </div>
                 <div>
                     <label>Short Description::</label>
-                    <span>{bookdata?.bookDescription}</span>
+                    <span>{bookdata?.shortDescription}</span>
                 </div>
             </div>
                 <div className="Edit-buttons">

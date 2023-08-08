@@ -8,10 +8,13 @@ export default function AddBook() {
     console.log(data)
     try {
       const response = await axios.post('http://localhost:3001/books/create',data);
+      window.alert("your new book is added successfully");
       console.log(response.data.data);
     } 
     catch (error) {
       console.error(error);
+      window.alert("your new book is not added. Please check");
+
     }
   }
  return(
