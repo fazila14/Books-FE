@@ -6,26 +6,26 @@
     flex-direction: column;
     background-color: aliceblue;
 }
-form {
+/* form {
     border: 3px solid #f1f1f1
-}
+} */
 .LoginForm{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url('C:\Users\Gayasuddin\Desktop\bookapp\booksapp\mediaAssets\pexels-min-an-694740.jpg');
+    background-image: url('../../assets/694740.jpg');
     height: 120vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-input[type=text], input[type=password] {
+input[type=text], input[type=password],input[type=date],input[type=radio]{
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    width: 90%;
+  
 }
   
   .login-btn{
@@ -35,7 +35,7 @@ input[type=text], input[type=password] {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 90%;
+    width: 100%;
   }
   .cancel-btn{
     background-color: #e03333;
@@ -44,10 +44,15 @@ input[type=text], input[type=password] {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 90%;
+    width: 100%;
   }
   button:hover {
     opacity: 0.8;
+  }
+  .newUser-signin p{
+    font-size: 12px;
+    color: blue;
+    text-decoration-line: underline;
   }
   
   

@@ -4,7 +4,6 @@
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    width: 90%;
 }
 .bookform{
     height: 120vh;

@@ -1,11 +1,6 @@
 
 .AllbooksPage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
+height: 100vh;
 }
 .add-new{
     background-color: #04AA6D;
@@ -19,4 +14,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.books-card{
+    width: 203px;
+}
+.adding-new-btn{
+    display: flex;
+    justify-content: center
 }

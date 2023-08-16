@@ -1,0 +1,16 @@
+.filterSort-container{
+    display: flex;
+    border: solid 1px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+.filterSort-container section{
+    display: flex;
+    gap: 10px;
+}
+form{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}

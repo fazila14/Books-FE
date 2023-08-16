@@ -1,0 +1,27 @@
+
+section{display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
+
+}
+.gender-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    padding:20px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    color:white
+}
+.userForm-Buttons{
+    display: flex;
+    flex-direction: column;
+}

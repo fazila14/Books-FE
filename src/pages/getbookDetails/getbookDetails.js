@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate , useParams} from 'react-router-dom';
 import axios from "axios";
 import Modal from "../../components/modal/modal";
-import Getallbooks from "../../components/getAllBooks/getallbooks";
 import "./getbookDetails.css"
 import BooksFormSubmit from "../../components/booksFormSubmit/booksFormSubmit";
 
@@ -23,7 +22,7 @@ export default function GetBookDetails(){
     const [bookdata, setBookdata]=useState({});
     const submitEditedBook =async(data)=>{
         try {
-            await axios.patch(`http://localhost:3001/books/editById/${bookdata.id}`,data);    
+            await axios.patch(`http://localhost:3001/books/editById/${bookdata._id}`,data);    
             await getBookDetails(bookdata.id); 
             window.alert("your book details is updated");
             setIsOpen(false);      
@@ -53,7 +52,7 @@ export default function GetBookDetails(){
             <div className="form-container">
                 <div>
                     <label>Id::</label>
-                    <span>{bookdata?.id}</span>
+                    <span>{bookdata?._id}</span>
                 </div>
                 <div>
                     <label>Title::</label>
